@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&family=Raleway&display=swap');
+
+:root{
+    --primary-color:rgb(236, 107, 129);
+    --secondary-color:#066;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway',sans-serif;
+    line-height: 1.54;
+}
+
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    padding: 0rem 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.btn{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 3rem;
+    text-align: center;
+    display: inline-block;
+    padding: .6rem 1.5rem;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover{
+background-color: rgb(230, 14, 14);
+
+}
+
+#about{
+    height: 100vh;
+    background-color: #000;
+}
+#navbar{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+}
+#navbar ul{
+list-style: none;
+display: flex;
+}
+#navbar ul a{
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#navbar ul a:hover{
+    background-color: rgb(253, 6, 47);
+}
+#about .container{
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+#title{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.lead{
+    font-size: 1.2rem;
+    color: #eee;
+    font-weight: 700;
+}
+
+#work{
+    text-align: center;
+    width: 100%;
+    padding: 4rem .1rem;
+    background-color: var(--secondary-color);
+}
+#work .projects{
+    display: grid;
+    grid-template-columns: repeat(2 , 2fr);
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+#work .container >h1{
+font-size: 2.5rem;
+color: #fff;
+font-weight: bolder;
+text-transform: capitalize;
+margin-bottom: 1rem;
+}
+
+#bottom-line{
+    height: 6px;
+    background-color: #fff;
+    width: 55%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+#work .projects .box{
+    background-color: #eee;
+    border: 5px solid #eee;
+    border-radius: 3px;
+}
+
+#work .projects .box a{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#work .projects .box a p{
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    color:#333;
+}
+
+.code{
+color: #eee;
+transition:  .5s all ease;
+font-size: 1.6rem;
+
+}
+
+#work .projects .box:hover .code{
+
+    color:var(--primary-color);
+}
+
+
+
+#contact{
+height: 80vh;
+background-color: #444;
+color: #fff;
+}
+
+#contact .container{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    height: 100%;
+}
+
+#contact .container h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    padding-bottom: .1rem;
+}
+
+#contact .container p{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+#contact .container .social>div a{
+text-decoration: none;
+font-size: 1.5rem;
+color: #eee;
+margin: 1rem 2rem;
+font-weight: bolder;
+transition:all .5s all;
+}
